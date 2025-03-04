@@ -4,6 +4,12 @@
 
 Este proyecto forma parte de un ejercicio académico cuyo objetivo es demostrar el uso de Git y Bash para la creación y control de versiones de scripts. Se implementan funcionalidades simuladas de código malicioso, como propagación, persistencia y autodestrucción, sin causar ningún daño real al sistema.  
 
+## Ética y Responsabilidad  
+
+Este proyecto tiene el único propósito de **educar y concienciar** sobre la importancia de la seguridad informática. El mal uso de este conocimiento puede ser ilegal y va en contra de los principios éticos de la ciberseguridad. Se recomienda a los usuarios que empleen este aprendizaje para fortalecer la seguridad de sus sistemas y no para fines maliciosos.  
+
+---
+
 El propósito es **aprender sobre control de versiones con Git, manipulación de scripts en Bash y seguridad informática**, comprendiendo cómo funcionan ciertos tipos de código potencialmente dañino para fortalecer el conocimiento en ciberseguridad.  
 
 ## Advertencia  
