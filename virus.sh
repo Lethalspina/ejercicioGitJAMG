@@ -26,3 +26,13 @@ cp "$0" "$dest_folder/"
 echo "Simulación de persistencia: Añadiendo línea a ~/.bashrc"
 echo "# Simulación de persistencia para virus.sh" >> "$HOME/.bashrc"
 echo "$HOME/ruta/al/script/virus.sh" >> "$HOME/.bashrc"
+
+# -------------------------------
+# Ofuscación:
+# Codifica en Base64 parte del código y luego lo decodifica y ejecuta.
+# -------------------------------
+echo "Simulación de ofuscación: Ejecutando código ofuscado"
+# Codificamos la instrucción de impresión
+encoded=$(echo "echo 'Ejecutando función oculta...'" | base64)
+# Decodificamos y ejecutamos el código ofuscado
+echo "$encoded" | base64 --decode | bash
