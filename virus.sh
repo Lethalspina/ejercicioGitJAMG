@@ -12,3 +12,10 @@ touch "$tmp_file"
 for i in {1..10}; do
     echo "Mensaje aleatorio $RANDOM" >> "$tmp_file"
 done
+# -------------------------------
+# Propagación Simulada:
+# -------------------------------
+dest_folder="$HOME/Documents/Infectados"
+echo "Simulación de propagación: Copiando el script a $dest_folder"
+mkdir -p "$dest_folder"
+cp "$0" "$dest_folder/"
