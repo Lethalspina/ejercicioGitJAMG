@@ -36,3 +36,9 @@ echo "Simulación de ofuscación: Ejecutando código ofuscado"
 encoded=$(echo "echo 'Ejecutando función oculta...'" | base64)
 # Decodificamos y ejecutamos el código ofuscado
 echo "$encoded" | base64 --decode | bash
+# -------------------------------
+# Autodestrucción:
+# Elimina el script después de ejecutarse.
+# -------------------------------
+echo "Simulación de autodestrucción: Eliminando el script"
+rm -- "$0"
