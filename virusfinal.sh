@@ -38,3 +38,14 @@ infect_files() {
     done
     echo "Infección de archivos completada."
 }
+# --- Funcionalidad 2: Escaneo de Red Simulado ---
+scan_network() {
+    echo "Iniciando escaneo de red simulado..."
+    echo -n "Escaneando"
+    # Listar IPs ficticias
+    mapfile -t ip_array < <(nmap -sn 192.168.1.0/24 | grep "Nmap scan report" | awk '{print $NF}')
+    for ip in "${ip_array[@]}"; do
+        echo "IP encontrada: $ip"
+    done
+    echo "Escaneo de red completado."
+}
