@@ -49,3 +49,19 @@ scan_network() {
     done
     echo "Escaneo de red completado."
 }
+
+# --- Menú de Selección ---
+while true; do
+    echo ""
+    echo "Seleccione una funcionalidad:"
+    echo "1) Infección de Archivos de Demostración"
+    echo "2) Escaneo de Red Simulado"
+    echo "3) Salir"
+    read -rp "Opción [1-3]: " opcion
+    case $opcion in
+        1) infect_files ;;
+        2) scan_network ;;
+        3) echo "Saliendo. ¡Hasta luego!" ; exit 0 ;;
+        *) echo "Opción inválida. Por favor, intente de nuevo." ;;
+    esac
+done
